@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Baloo+Bhai+2:wght@600&family=Bree+Serif&family=Dancing+Script:wght@700&family=Inter:wght@100;200&family=Kanit:ital,wght@0,700;0,800;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Roboto+Condensed:ital,wght@0,300;1,300&family=Staatliches&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+
+        }
+        body{
+          background: url(Screenshot_8.jpg);
+          background-size: cover;
+          background-position: center;
+          width: 100%;
+          height: 100vh;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0px 5%;
+            margin-top: 20px;
+        }
+        .logo {
+            color: white;
+            font-size: 2rem;
+        }
+        .logo a{
+            text-decoration: none;
+            color: white;
+        }
+        .logo a:hover {
+            color: tomato;
+        }
+
+        .lis ul li{
+            display: inline-flex;
+            padding-left: 16px;
+            font-size: 1.2rem;
+            
+        }
+        .lis a{
+            text-decoration: none;
+            color: white;
+        }
+        .lis ul li a:hover {
+            color: tomato;
+        }
+        .home {
+            margin-left: 13%;
+            margin-top: 10%;
+        }
+        .home h1 {
+            font-size: 3.6rem;
+            padding-top: 10px;
+            color: white;
+        }
+        .home p {
+            font-size: 16px;
+            font-family: "montserrat-semibold", sans-serif;
+            color: white;
+        }
+        .btn {
+            margin: 2% 4px;
+            padding: 10px 28px;
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            font-family: "montserrat-semibold", sans-serif;
+            font-size: 1rem;
+
+        }
+        .btn:hover {
+            background-color: white;
+            color: black;
+        }
+        .social{
+            margin-left: 90%;
+            margin-top: -30%;
+            
+        }
+        .social-icon{
+            display: block;
+            padding: 8% 10px;
+            font-size: 2rem;
+            border: 1px solid white;
+            width: 30px;
+            cursor: pointer;  
+            text-align: center;
+            line-height: 25px;
+
+            margin-right: 5px;
+            margin: 10px 0px;
+            border-radius: 50px;
+            color: white;
+    height: 30px; 
+
+
+
+
+        }
+        .social-icon:hover{
+            background-color: deepskyblue;
+            color: black;
+        }
+        .about{
+            background-color: #39b54a;
+            margin-top: 8%;
+            text-align: center;
+
+        }
+        .about h2{
+            font-size: 4rem;
+            color: white;
+            font-family: "montserrat-semibold", sans-serif;
+
+
+        }
+        .about h1{
+            font-size: 0.9rem;
+            font-family: "montserrat-semibold", sans-serif;
+            padding-top: 90px;
+        }
+        .about p {
+            font-size: 1.1rem;
+            padding-top: 30px;
+            word-spacing: 1px;
+            
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        span {
+            font-weight: bolder;
+            font-size: 1rem;
+        }
+
+        .proj {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 20px;
+        }
+        .box {
+            border-right: 1px solid white;
+            margin: 0px 20px;
+            padding: 20px;
+            font-family: "montserrat-semibold", sans-serif;
+            margin-top: 1.2rem;
+    color: #000000;
+    font-size: 1.8rem;
+        }
+        .box1 {
+            margin: 0px 20px;
+            padding: 20px;
+            font-family: "montserrat-semibold", sans-serif;
+            margin-top: 1.2rem;
+    color: #000000;
+    font-size: 1.8rem;
+        }
+        .services {
+            background-color: white;
+            text-align: center;
+            
+        }
+         .services h2 {
+            font-size: 1rem;
+            padding-top: 4%;
+            color: #39b54a;
+            text-align: center;
+         }
+         .services h3 {
+            font-size: 2.2rem;
+            color: black;
+            font-family: "montserrat-semibold", sans-serif;
+
+         }
+         .lola {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+         }
+         .lola1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -20px;
+
+         }
+         .lola2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+
+         }
+         .box3 {
+            padding: 50px;
+            
+            
+         }
+         .box4 {
+            padding: 0px 50px;
+            
+            
+         }
+         .box5 {
+            padding: 0px 50px;
+            
+            
+         }
+         .box3 h1{
+            text-align: left;
+
+            font-size: 1.2rem;
+            font-family: "montserrat-semibold", sans-serif;
+
+            
+         }
+         .box4 h1{
+            text-align: left;
+            font-size: 1.2rem;
+            font-family: "montserrat-semibold", sans-serif;
+
+            
+         }
+         .box5 h1{
+            text-align: left;
+
+            font-size: 1.2rem;
+            font-family: "montserrat-semibold", sans-serif;
+
+            
+         }
+         .box3 p {
+            padding-top: 10px;
+            font-family: "montserrat-semibold", sans-serif;
+        color: #757575;
+        font-size: 0.9rem;
+        text-align: left;
+
+        
+            }
+            .box4 p {
+            padding-top: 10px;
+            font-family: "montserrat-semibold", sans-serif;
+        color: #757575;
+        font-size: 0.9rem;
+        text-align: left;
+
+        
+            }
+            .box5 p {
+            padding-top: 10px;
+            font-family: "montserrat-semibold", sans-serif;
+        color: #757575;
+        font-size: 0.9rem;
+        text-align: left;
+        margin-bottom: 20%;
+
+        
+            }
+            footer{
+                text-align: center;
+                padding: 40px;
+                background-color: #000000;
+                font-family: "montserrat-semibold", sans-serif;
+
+                color: white;
+            }
+         
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo"><a href="index.html">Farjad.</a></div>
+        <div class="lis">
+            <ul>
+                <li><a href="">Sign In</a></li>
+                <li><a href="">Sign Up</a></li>
+            </ul>
+        </div>
+    </div>
+    <section class="home">
+        <p>WELCOME TO GLINT</p>
+        <h1>We are a creative group <br>
+            of people who design <br>
+            influential brands and <br>
+            digital experiences.</h1>
+
+            <button class="btn">Start a Project</button>
+            <button class="btn">More About US</button>
+
+            <div class="social">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-behance"></i></a>
+            </div>
+    
+    </section>
+    <div class="about">
+        <h1>HELLO THERE
+        </h1>
+        <h2>We Are Farjad.
+        </h2>
+        <p> I'm Farjad – a passionate and driven freelancer with a knack for making things happen<br>With a thirst for knowledge and a love for creative challenges, <br> I've embraced the world of freelancing as a way to bring my ideas to life A perpetual enthusiast, .<br> I thrive on exploring new horizons and diving into projects that push my boundaries <br>From coding to design,  <br>I enjoy the thrill of solving problems and crafting innovative solutions that leave a positive impact.<br> <br> <br>
+</p>
+            <div class="proj">
+                <div class="box">
+                    <h2>127</h2>
+                    <p>Awards Received
+                    </p>
+                </div>
+                <div class="box">
+                    <h2>1505</h2>
+                    <p>Cups of Coffee
+
+                    </p>
+                </div>
+                <div class="box">
+                    <h2>109</h2>
+                    <p>Projects Completed
+
+                    </p>
+                </div>
+                <div class="box1">
+                    <h2>102</h2>
+                    <p>Happy Clients
+
+                    </p>
+                </div>
+            </div>
+
+        
+    </div>
+    <div class="services">
+        <h2>What We D0</h2>
+        <h3>We’ve got everything you need to <br> launch and grow your business
+        </h3>
+        <div class="lola">
+                <div class="box3"><h1>Brand Identity</h1>
+                <p>Nemo cupiditate ab quibusdam quaerat impedit magni. <br>Earum suscipit ipsum laudantium. Quo delectus est. <br> Maiores voluptas ab sit natus veritatis ut. <br>Debitis nulla cumque veritatis.  <br>Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+
+                </p></div>
+                <div class="box3"><h1>Illustration</h1>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. <br>Earum suscipit ipsum laudantium. Quo delectus est. <br> Maiores voluptas ab sit natus veritatis ut. <br>Debitis nulla cumque veritatis.  <br>Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+    
+                    </p></div>
+        </div>
+        <div class="lola1">
+            <div class="box4"><h1>Marketing</h1>
+            <p>Nemo cupiditate ab quibusdam quaerat impedit magni. <br>Earum suscipit ipsum laudantium. Quo delectus est. <br> Maiores voluptas ab sit natus veritatis ut. <br>Debitis nulla cumque veritatis.  <br>Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+
+            </p></div>
+            <div class="box4"><h1>Web Design
+            </h1>
+                <p>Nemo cupiditate ab quibusdam quaerat impedit magni. <br>Earum suscipit ipsum laudantium. Quo delectus est. <br> Maiores voluptas ab sit natus veritatis ut. <br>Debitis nulla cumque veritatis.  <br>Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+
+                </p></div>
+    </div>
+    <div class="lola2">
+        <div class="box5"><h1>Packaging Design
+        </h1>
+        <p>Nemo cupiditate ab quibusdam quaerat impedit magni. <br>Earum suscipit ipsum laudantium. Quo delectus est. <br> Maiores voluptas ab sit natus veritatis ut. <br>Debitis nulla cumque veritatis.  <br>Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+
+        </p></div>
+        <div class="box5"><h1>Web Development
+        </h1>
+            <p>Nemo cupiditate ab quibusdam quaerat impedit magni. <br>Earum suscipit ipsum laudantium. Quo delectus est. <br> Maiores voluptas ab sit natus veritatis ut. <br>Debitis nulla cumque veritatis.  <br>Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+
+            </p></div>
+</div>
+    
+    </div>
+    <footer>
+        @Copyright all rights reserved, 2023 Made by Farjad!
+    </footer>
+    
+</body>
+</html>
